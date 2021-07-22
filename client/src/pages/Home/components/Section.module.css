@@ -1,0 +1,146 @@
+.section {
+  height: calc(100vh - 54px);
+  margin-top: 54px;
+}
+
+.section__slider {
+}
+
+.section__banner {
+  position: relative;
+  height: 50vh;
+}
+
+.banner__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  transition: all .4s ease;
+  
+}
+
+.banner__overlay_1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner__overlay_2 {
+  background: linear-gradient(0deg, #171717 6%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section__text {
+  position: absolute;
+  bottom: 50px;
+  width: 30%;
+  
+}
+
+.section__title {
+  color: rgb(211, 211, 211);
+  
+}
+
+.section__date {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: rgb(121, 121, 121);
+  font-weight: 400;
+}
+
+.section__description {
+  font-size: 15px;
+  color: rgb(184, 184, 184);
+  font-weight: 400;
+}
+
+.section__button {
+  background: #0CC656;
+  width: 136px;
+  height: 46px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 900;
+  color: #171717;
+  position: absolute;
+  bottom: 50px;
+}
+
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  height: calc(50vh - 54px);
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.section__cards_title {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: rgb(168, 168, 168);
+  font-weight: 500;
+}
+
+.section__cards_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section__card {
+  width: 33vh;
+  height: 28vh;
+  background-size: cover;
+  background-position: top;
+  border-radius: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  transition: height .5s ease-out, border .2s linear;
+}
+
+.section__card.active {
+  border: 7px solid #0DCA58;
+  height: 41vh;
+  transition: height .3s ease-in, border .2s ease-out;
+}
+
+.card__overlay {
+  height: 40%;
+  width: 100%;
+  background: rgba(36, 36, 36, 0.705);
+  border-radius: 0 0 35px 35px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card__title {
+  color: rgb(150, 150, 150);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card__date {
+  font-weight: 400;
+  color: rgb(121, 121, 121);
+  margin-top: -2px;
+}
+
+.section__card:hover .card__overlay {
+  opacity: 1;
+  transition: all .14s ease;
+}
+

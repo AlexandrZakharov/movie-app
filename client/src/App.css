@@ -1,0 +1,10 @@
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  /* background: rgb(141, 141, 141); */
+  position: relative;
+}
+
+.App {
+  background: #171717;
+}
